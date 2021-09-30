@@ -1,0 +1,47 @@
+.contact-info {
+  background-color: #fff;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  @mixin atSmall {
+    padding: 1.5rem;
+  }
+
+  /* &__detail {
+    position: relative;
+    padding-bottom: 1rem;
+
+    & p {
+      margin: 0;
+      margin-left: 2rem;
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+
+    @mixin atSmall {
+      position: absolute;
+      left: 0;
+    }
+  } */
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & p {
+      margin: 0;
+      margin-left: 1rem;
+    }
+  }
+}

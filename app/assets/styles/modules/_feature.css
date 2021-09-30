@@ -1,0 +1,42 @@
+.feature {
+  text-align: center;
+  padding: 1rem;
+
+  @mixin atMedium {
+    &--align-left-at-medium {
+      text-align: left;
+    }
+  }
+
+  &__header {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20.2px;
+
+    @mixin atSmall {
+      font-size: 0.875rem;
+    }
+
+    &--large {
+      font-size: 1.625rem;
+    }
+
+    &--red {
+      color: #7f0102;
+    }
+
+    &--padding {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+}

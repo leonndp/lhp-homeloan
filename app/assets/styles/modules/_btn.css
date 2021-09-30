@@ -1,0 +1,59 @@
+.btn {
+  cursor: pointer;
+  background-color: #7f0102;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: all 0.2s ease-in-out;
+
+  /* &:hover {
+    background-color: #ff4f14;
+  } */
+
+  &--m-top {
+    margin-top: 30px;
+  }
+
+  &--m-bottom {
+    margin-bottom: 30px;
+  }
+
+  &--m-right {
+    @mixin atSmall {
+      margin-right: 100px;
+    }
+  }
+
+  &--clear {
+    background-color: transparent;
+    color: #4770ac;
+    border: 2px solid #4770ac;
+
+    &:hover {
+      background-color: #4770ac;
+      color: white;
+    }
+  }
+
+  &--white {
+    color: #7f0102;
+    background-color: white;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &--blue {
+    background-color: #4770ac;
+  }
+
+  &--m-vertical {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

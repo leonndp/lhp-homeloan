@@ -1,0 +1,14 @@
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @mixin atMedium {
+    flex-direction: row;
+  }
+
+  &--m-top {
+    margin-top: 80px;
+  }
+}
